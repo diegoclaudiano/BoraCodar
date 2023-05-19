@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="animated">
 <head>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,10 +16,10 @@
 <body>
   <div id="app">
     <div id="product-image">
-      <button id="btn-360">
+      <button id="btn-360" onclick="toggle()">
         <img src="./assets/360.svg" alt="clique nesse botão para animar o sofá">
       </button>
-      <button id="btn-close">
+      <button id="btn-close" onclick="toggle()">
         <img src="./assets/close.svg" alt="parar de animar o sofá">
       </button>
 
@@ -33,5 +33,11 @@
       <button>ADICIONAR À CESTA</button>
     </div>
   </div>
+
+  <script>
+    function toggle() {
+      document.documentElement.classList.toggle('animated')
+    }
+  </script>
 </body>
 </html>
